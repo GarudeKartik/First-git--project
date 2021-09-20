@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        body{
+            background: dimgray;
+        }
+
+        .box-d{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid red;
+            overflow: hidden;
+            padding:5%;
+            /* height: 50vh; */
+        }
+
+        .box-1{
+            background-color: floralwhite;     
+            width: 100%;
+            height:3vh ;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            animation-name: sample;
+            animation-duration:3s;
+            animation-delay: 3s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-timing-function:linear;
+            animation-fill-mode: forwards;
+            /* animation-timing-function:cubic-bezier(3, 3, 3, 1); */
+        }
+
+        @keyframes sample{
+
+            0%{
+                /* border-radius: 0%; */
+                /* margin-left: 0%; */
+            /* margin-left: -200%; */
+
+                /* margin-top: 3%; */
+                /* width: 0vw; */
+                height: 2vh;
+            }
+
+            25%{
+            /* margin-left: -150%; */
+
+                height: 4vh;
+            }
+
+            50%{
+            /* margin-left: -100%; */
+
+                height: 8vh;
+            }
+
+            65%{
+
+                height: 12vh;
+            }
+
+            85%{
+                height: 22vh;
+            }
+
+            90%{
+                height: 25vh;
+            }
+
+           
+
+            100%{
+                /* border-radius: 50%; */
+                /* margin-left: 30%; */
+                /* margin-top: 6%; */
+                /* width: 100%; */
+                height: 30vh;
+
+            }
+            
+        }
+
+        .animate__animated.animate__backInLeft {
+  --animate-duration: 1ms;
+  /* --animation-delay: 1ms; */
+}
+
+:root {
+  --animate-delay: 0.5s;
+}
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="box-d">
+
+        <div class="box-1 animate__animated  animate__backInLeft animate__delay-2s">
+        </div>
+    </div>
+</body>
+</html>
